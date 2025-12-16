@@ -2,6 +2,8 @@
 
 - Update 'nvim-treesitter/nvim-treesitter' plugin to not explicitly use `main` branch as it is now the default.
 
+- Update 'mason-org/mason.nvim' example to use `now_if_args` instead of `later`. Otherwise LSP server installed via Mason will not yet be available if Neovim is started as `nvim -- path/to/file`.
+
 ## 2025-11-22
 
 - Update `<Leader>fs` mapping to use `"workspace_symbol_live"` scope for `:Pick lsp` instead of `"workspace_symbol"`
