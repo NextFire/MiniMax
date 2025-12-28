@@ -9,7 +9,7 @@
 -- Use this file to install and configure other such plugins.
 
 -- Make concise helpers for installing/adding plugins in two stages
-local add, later = MiniDeps.add, MiniDeps.later
+local now, add, later = MiniDeps.now, MiniDeps.add, MiniDeps.later
 local now_if_args = _G.Config.now_if_args
 
 -- Tree-sitter ================================================================
@@ -174,3 +174,11 @@ end)
 --   -- Enable only one
 --   vim.cmd('color everforest')
 -- end)
+
+-- User plugins ===============================================================
+
+-- GitHub Copilot
+now(function()
+  add('github/copilot.vim')
+  vim.g.copilot_no_tab_map = true
+end)
