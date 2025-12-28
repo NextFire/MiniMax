@@ -245,3 +245,8 @@ nmap_leader('vV', '<Cmd>lua MiniVisits.remove_label("core")<CR>', 'Remove "core"
 nmap_leader('vl', '<Cmd>lua MiniVisits.add_label()<CR>',          'Add label')
 nmap_leader('vL', '<Cmd>lua MiniVisits.remove_label()<CR>',       'Remove label')
 -- stylua: ignore end
+
+-- User mappings ==============================================================
+
+-- GitHub Copilot
+vim.keymap.set('i', '<C-A>', 'copilot#Accept("\\<CR>")', { expr = true, replace_keycodes = false })
