@@ -111,7 +111,7 @@ now_if_args(function()
 
   -- Synchronize terminal emulator background with Neovim's background to remove
   -- possibly different color padding around Neovim instance
-  MiniMisc.setup_termbg_sync()
+  -- MiniMisc.setup_termbg_sync({ explicit_reset = true }) -- macOS Terminal requires explicit_reset
 end)
 
 -- Notifications provider. Shows all kinds of notifications in the upper right
